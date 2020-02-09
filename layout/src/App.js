@@ -19,8 +19,8 @@ function App() {
       <div className="card m-5">
         <img className="card-img-top" src={img} alt="Card image cap" />
         <div className="card-body">
-  <h5 className="card-title">{name}</h5>
-  <p className="card-text">{address}</p>
+          <h5 className="card-title">{name}</h5>
+          <p className="card-text">{address}</p>
           <a href={"mailto:"+email} className="btn btn-primary">Contact {her_him} by email !</a>
         </div>
       </div>

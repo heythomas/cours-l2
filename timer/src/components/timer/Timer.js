@@ -5,7 +5,6 @@ class Timer extends React.Component {
   constructor(props) {
     super(props);
     this.state = { seconds : 0};
-    this.s = "s";
   }
 
   componentDidMount() {
@@ -25,15 +24,9 @@ class Timer extends React.Component {
   }
   
   render () {
-    if(this.state.seconds <= 1){
-      this.s = "";
-    }
-    else{
-      this.s = "s";
-    }
     return (
       <div data-testid="timer">
-        <h2>{this.state.seconds} Seconde{this.s}</h2>
+        <h2>{this.state.seconds}</h2>
       </div>
     );
   }
